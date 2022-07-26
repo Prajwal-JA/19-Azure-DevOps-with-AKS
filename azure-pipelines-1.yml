@@ -15,7 +15,7 @@ stages:
   - job: Build
     displayName: Build stage
     pool:
-      vmImage: 'cognizantdemo:latest'
+      vmImage: 'nginx:latest'
     steps:
     # Task-1: Build Docker Image and push to Azure Container Registry ACR
     - task: Docker@2
