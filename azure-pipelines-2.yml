@@ -20,7 +20,7 @@ stages:
     # Task-1: Build Docker Image and push to Azure Container Registry ACR
     - task: Docker@2
       inputs:
-        containerRegistry: 'manual-aks-svc connection'
+        containerRegistry: 'prajwalacr'
         repository: 'customnginx2app'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
